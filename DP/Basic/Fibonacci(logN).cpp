@@ -6,7 +6,7 @@ Fn      F(n-1)
 for n = 1;
 F2      F1
 F1      F0
-We call the matrix for first fib/i number, if we multiply it to itself n times, we can get (n+1)th Fibonacci number;
+We easily determine the matrix for first fib/i number, if we multiply it to itself n times, we can get (n+1)th Fibonacci number;
 How works the program in logN time? 
 
 For example we have 18;
