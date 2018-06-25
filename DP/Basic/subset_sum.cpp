@@ -1,6 +1,7 @@
 /*
 It is easy task. 
 Time complexity: O(sum * n);
+Memory: O(sum*n), but we can optimize it until O(sum*2) keeping just previous and current line;
 3 
 3 4 7 
 
