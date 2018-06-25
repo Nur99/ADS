@@ -1,6 +1,9 @@
 /*
 Given n friends, each one can remain single or can be paired up with some other friend. Each friend can be paired only once. 
 Find out the total number of ways in which friends can remain single or can be paired up.
+
+It is obvous that one part of current index's value is it's previous index's value. It is that case when it's previous index stays at last.
+But there are other cases when other numbers stay at last. It is equal to dp[i-2]*(i-1);
 */
 
 #include <bits/stdc++.h>
