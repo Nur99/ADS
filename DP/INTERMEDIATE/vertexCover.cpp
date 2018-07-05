@@ -1,3 +1,11 @@
+/*
+Let's think we have a subset and when we choose any two connected nodes one of them must be in our subset. 
+Task: find minimum size of our subset. 
+
+Idea is in that we can enter to all of nodes and calculate seperately each of them, but also we can calculate node's information when 
+we entered into it and saved it. It's like precalculation and overlapping subproblems.  
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 struct node{
