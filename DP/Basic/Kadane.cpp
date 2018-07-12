@@ -1,3 +1,6 @@
+/*
+If you do not underestand the code, just copy and compile, I printed all operations which will be done, it is understandable. 
+*/
 #include <bits/stdc++.h>
 using namespace std;
  
