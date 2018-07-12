@@ -1,0 +1,7 @@
+1. How many minimum insertions you should do to make string an palindrome? 
+At first, let's answer to this question. How many insertions should be done to make two string identical? 
+Answer of second question is easier, we should find longest common subsequence and it's answer will be seemed like that:
+  s1.size() - LCS + s2.size() - LCS
+Making a string a palindrome means that we should make the given string and it's reverse identical )))
+So answer will be like that. 
+  s.size() - LCS + reversedS.size() - LCS;
