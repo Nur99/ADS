@@ -5,3 +5,5 @@ Answer of second question is easier, we should find longest common subsequence a
 Making a string a palindrome means that we should make the given string and it's reverse identical )))
 So answer will be like that. 
   s.size() - LCS + reversedS.size() - LCS;
+  
+
