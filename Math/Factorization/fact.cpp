@@ -22,9 +22,9 @@ int main(){
     int n;
     cin>>n;
     
-    while(n != sfe[n]){
+    while(n != 1){
+        if(n == sfe[n])cout<<n, break;
         cout<<sfe[n]<<' ';
         n /= sfe[n];
     }
-    cout<<n;    
 }
