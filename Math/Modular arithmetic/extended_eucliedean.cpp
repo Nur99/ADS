@@ -1,16 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int gcdExtended(int a, int b, int &x, int &y){
+int gcdExtended(int a, int b, int *x, int *y){
     
     if(a == 0){
-        x = 0, y = 1;
+        *x = 0, *y = 1;
         return b;
     }
     int x1, y1;
-    gcdExtended(a%b, b, &x1, &y1);
-    x = y1 - (b/a)*x1;
-    y = x1;
+    int gcd = gcdExtended(b%a, a, &x1, &y1);
+    
+    *x = y1 - (b/a) * x1;
+    *y = x1;
+    
+    return gcd;
 }
 int main(){
     int a, b;
@@ -19,6 +22,6 @@ int main(){
     int x, y;
     int g = gcdExtended(a, b, &x, &y);
         
-    if(g == 1) cout<<(x%m+m)%m;   
+    if(g == 1) cout<<(x%b+b)%b;   
     else cout<<-1;    
 }
