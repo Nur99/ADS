@@ -15,8 +15,8 @@ int main(){
     
     
     while(t--){
-        int d;
-        cin>>d;
+        int n, d;
+        cin>>n >> d;
         cout<<left(n, d)<<endl;
         cout<<right(n, d)<<endl;
     }
